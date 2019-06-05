@@ -37,8 +37,7 @@ public class AppDemo implements CommandLineRunner {
 	
 	public void proxyPatternDemo() {		
 		for (User user : userLogins) {
-			logger.info("calling with user info : {}", user);
-			userAuthenicationProxy.authenticate(user.getUsername(), user.getPassword());
+			userAuthenicationProxy.authenticate(user.getUsername(), user.getPassword());			
 		}
 	}
 

@@ -25,7 +25,7 @@ class UserAuthentication implements Authentication {
 	}
 
 	@Override
-	public boolean authenticate(String username, String password) {
+	public Boolean authenticate(String username, String password) {
 		logger.info("authenticate() called - attempting to login");
 		boolean isAuthenticated = false;
 		try {

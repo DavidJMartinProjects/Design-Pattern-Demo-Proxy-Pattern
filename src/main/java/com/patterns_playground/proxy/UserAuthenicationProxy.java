@@ -17,7 +17,7 @@ public class UserAuthenicationProxy implements Authentication {
 	private Logger logger = LoggerFactory.getLogger(UserAuthenicationProxy.class);
 
 	@Override
-	public boolean authenticate(String username, String password) {
+	public Boolean authenticate(String username, String password) {
 		logger.info("authenticate() called.");
 		boolean isAuthenticated = false;
 		try {
@@ -28,7 +28,7 @@ public class UserAuthenicationProxy implements Authentication {
 		return isAuthenticated;
 	}
 
-	private boolean checkNumOfConcurrentUsers(String username, String password) {
+	private Boolean checkNumOfConcurrentUsers(String username, String password) {
 		logger.info("validateLogin() activeUsersCount count : {}", activeUsersCount);
 		if (++activeUsersCount <= MAX_CONCURRENT_USERS) {			
 			return userAuthentication.authenticate(username, password);

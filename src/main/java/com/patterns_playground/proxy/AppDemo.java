@@ -25,10 +25,12 @@ public class AppDemo implements CommandLineRunner {
 	private void init() {
 		userLogins = new ArrayList<>();
 		userLogins.add(new User("Dave", "myPass1"));
-		userLogins.add(new User("James", "myPass2"));
-		userLogins.add(new User("John", "myPass3"));
-		userLogins.add(new User("Jason", "myPass4"));
-		userLogins.add(new User("Joe", "myPass5"));
+		userLogins.add(new User("Mary", "myPass1"));
+		userLogins.add(new User("John", "myPass2"));
+		userLogins.add(new User("John", "myPass20"));
+		userLogins.add(new User("Joe", "myPass3"));
+		userLogins.add(new User("James", "myPass4"));
+		userLogins.add(new User("Jason", "myPass5"));
 		userLogins.add(new User("Steve", "myPass6"));
 		userLogins.add(new User("Andy", "myPass7"));
 	}

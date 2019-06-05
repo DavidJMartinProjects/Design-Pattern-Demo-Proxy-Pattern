@@ -1,4 +1,4 @@
-package com.patterns_playground.design_patterns;
+package com.patterns_playground;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <interface id="1" language="java" name="com.patterns_playground.proxy.Authentication" project="design_patterns" 
+    file="/design_patterns/src/main/java/com/patterns_playground/proxy/Authentication.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="454" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="com.patterns_playground.proxy.UserAuthentication" project="design_patterns" 
+    file="/design_patterns/src/main/java/com/patterns_playground/proxy/UserAuthentication.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="268" y="391"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.patterns_playground.proxy.UserAuthenicationProxy" project="design_patterns" 
+    file="/design_patterns/src/main/java/com/patterns_playground/proxy/UserAuthenicationProxy.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="614" y="391"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.patterns_playground.proxy.AppDemo" project="design_patterns" 
+    file="/design_patterns/src/main/java/com/patterns_playground/proxy/AppDemo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="923" y="391"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="5">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="6">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="7" name="userAuthentication"/>      
+      <multiplicity id="8" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="9">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="10">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="11" name="userAuthenicationProxy"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

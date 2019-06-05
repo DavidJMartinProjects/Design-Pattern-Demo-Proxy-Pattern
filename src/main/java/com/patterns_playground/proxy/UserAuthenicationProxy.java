@@ -30,7 +30,9 @@ public class UserAuthenicationProxy implements Authentication {
 
 	private Boolean checkNumOfConcurrentUsers(String username, String password) {
 		logger.info("validateLogin() activeUsersCount count : {}", activeUsersCount);
-		if (++activeUsersCount <= MAX_CONCURRENT_USERS) {			
+		int userCount = activeUsersCount;
+		if (++userCount <= MAX_CONCURRENT_USERS) {	
+			activeUsersCount++;
 			return userAuthentication.authenticate(username, password);
 		} else {
 			throw new AuthenticationFailedException("max no. of concurrent users reached.");
